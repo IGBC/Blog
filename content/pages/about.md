@@ -11,3 +11,4 @@ In his free time Segfault divides his efforts between hardware and software proj
 
 However Segfault primarily enjoys coming up with crazy ideas, then forgetting or abandoning them before actually being able to do anything with them. As a result this blog was created as a place to write down random thoughts and rants (sorry there will be rants) before they too were forgotten. It also documents the current progress of projects not forgotten.
 
+This blog's source code is hosted on github [here](https://www.github.com/IGBC/Blog). You can raise content suggestions or corrections in the project's issue tracker.
