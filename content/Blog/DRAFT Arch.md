@@ -46,6 +46,8 @@ I could at this point add a few remarks about my dislike of many GNOME design de
 
 Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940MX. (See below for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
 
+<script src="https://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633.js"></script>
+
 The Nvidia GeForce 940MX on Linux
 =================================
 The laptop my GPU is fitted into is no longer manufactured, however recently I noticed that this GPU is still being sold in up to date machines including the Lenovo Thinkpad T470p so I thought it was worth giving a review.
