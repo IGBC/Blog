@@ -40,19 +40,34 @@ So the desktop environment is installed and working. First time too. Even all of
 
 **Recommendation:** learn from my experience and read carefully what meta packages are going to install.
 
-The second "problem", although this is more of a matter of taste, is that the desktop environment comes completely configured, which means I am probably going to spend the next three weeks fiddling until I have GNOME in a state that I like.
+The second "problem", although this is more of a matter of taste, is that the desktop environment comes completely unconfigured, which means I am probably going to spend the next three weeks fiddling until I have GNOME in a state that I like.
 
 I could at this point add a few remarks about my dislike of many GNOME design decisions, however this article is about Arch Linux not GNOME. Here instead I will just note that I may try some alternatives. 
 
 Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940MX. (See below for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
 
+Week 2: (17/05/17)
+=======
+
+*Why won't this f***cking printer work*
+
+So far everything has been working fine with the arch installation. Gnome is a f*cking nightmare but that's normal. This is a blog post about Arch not Gnome so I won't get into that. But now it is time to print something. Everyone know's printers only work if you sacrifce a goat, and everyone knows its worse on Linux.
+
+The problem comes when you consider the Arch way of packaging things; installing CUPS does not configure anything, leaving you fumbling through wiki and man pages desperate for some simple step by step guide on how to make it work. 
+
+I would love to provide one however after much confusion, deadlines pressing, and doubt that the printer even worked I relented and handed my laptop to someone who knew what they were doing. After 30 minutes of frantic black magic he decalared he didn't know why it didn't work. At that point and no point again since a peice of paper shot out of the printer containing my document. 
+
+The printer has returned to it's coma.
+
+**Recommendation:** Set up your printer drivers *before* you need to print something.
+
 <script src="https://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633.js"></script>
 
-The Nvidia GeForce 940MX on Linux
+The Nvidia GeForce 940M on Linux
 =================================
 The laptop my GPU is fitted into is no longer manufactured, however recently I noticed that this GPU is still being sold in up to date machines including the Lenovo Thinkpad T470p so I thought it was worth giving a review.
 
-Full disclosure, the system is a 2GB GeForce 940MX coupled to an Intel i7 5500u with 8GB of DDR3. The card is coupled via a PCIe gen 2 4x link and the display output shares that bandwidth. Everything discussed below is using the internal 1920x1080 monitor that has a max refresh rate of 60Hz.
+Full disclosure, the system is a 2GB GeForce 940M coupled to an Intel i7 5500u with 8GB of DDR3. The card is coupled via a PCIe gen 2 4x link and the display output shares that bandwidth. Everything discussed below is using the internal 1920x1080 monitor that has a max refresh rate of 60Hz.
 
 So first let's talk compatibility:
 ----------------------------------
