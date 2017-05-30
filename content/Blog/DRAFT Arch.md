@@ -51,11 +51,11 @@ Week 2: (17/05/17)
 
 *Why won't this f***cking printer work*
 
-So far everything has been working fine with the arch installation. Gnome is a f*cking nightmare but that's normal. This is a blog post about Arch not Gnome so I won't get into that. But now it is time to print something. Everyone know's printers only work if you sacrifce a goat, and everyone knows its worse on Linux.
+So far everything has been working fine with the arch installation. Gnome is a f*cking nightmare but that's normal. This is a blog post about Arch not Gnome so I won't get into that. But now it is time to print something. Everyone knows printers only work if you sacrifice a goat, and everyone knows its worse on Linux.
 
 The problem comes when you consider the Arch way of packaging things; installing CUPS does not configure anything, leaving you fumbling through wiki and man pages desperate for some simple step by step guide on how to make it work. 
 
-I would love to provide one however after much confusion, deadlines pressing, and doubt that the printer even worked I relented and handed my laptop to someone who knew what they were doing. After 30 minutes of frantic black magic he decalared he didn't know why it didn't work. At that point and no point again since a peice of paper shot out of the printer containing my document. 
+I would love to provide one however after much confusion, deadlines pressing, and doubt that the printer even worked I relented and handed my laptop to someone who knew what they were doing. After 30 minutes of frantic black magic he declared he didn't know why it didn't work. At that point and no point again since a piece of paper shot out of the printer containing my document. 
 
 The printer has returned to it's coma.
 
