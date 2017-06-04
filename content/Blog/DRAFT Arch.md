@@ -2,6 +2,8 @@ Title: So I tried Arch
 Date: 
 Tags: Linux, Arch Linux
 
+This article documents my experiences getting to grips with arch over the first month of using it. I installed it on my day to day laptop and used it nearly exclusively. My uses include normal web stuff, gaming, and software development. As Linux Distros are a rather contentious topic I would like to remind users that these thoughts are based exclusively on my experiences over the last month, and not necessarily always after reading the manual. (Lets face it, when you are in a hurry you don't always have time to read the wiki.) Note that many of my remarks below are more opinion than fact and in places quite candid.
+
 Day 0: (04/05/17)
 ======
 
@@ -44,7 +46,7 @@ The second "problem", although this is more of a matter of taste, is that the de
 
 I could at this point add a few remarks about my dislike of many GNOME design decisions, however this article is about Arch Linux not GNOME. Here instead I will just note that I may try some alternatives. 
 
-Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940M. (See below for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
+Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940M. (See an upcomming article for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
 
 Week 2: (17/05/17)
 =======
@@ -72,23 +74,8 @@ This leads to my second issue with the AUR, it has not been integrated into the 
 
 There are wrappers and managers that seek to improve this situation, however unsurprisingly none of these are made available in the main pacman repositories; to me this shows a firm stance of hostility toward user packages from the Arch core development community. I found that this has soured what has largely been a positive experience from Arch. There are a lot of people that tell me this is by design and that I simply don't understand the underlying decisions. This is probably true, but ultimately I am writing this from the prospective of an end user, where such reasons matter less than the end result.
 
-<script src="httpsgh://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633.js"></script>
+**Final remarks:**
+For the last month, with the exception of few quirks, Arch has been a reliable Linux platform. I have had numerous issues with my system over the last weeks, however all of them can be traced to the gnome desktop environment I am using. Arch provides a high degree of control of your system, providing you are willing to accept systemD at the core. For me personally I am willing to overlook the issues I raised about AUR to keep that level of control, and the well packaged core. However one thing I cannot look past is Gnome. That gets uninstalled tonight. 
 
+There are many things I left undiscussed here, and I may revisit this topic, or ammend this article later, however for now I will leave one trick I did not yet try. [This](https://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633) is the Arch kernel update survival kit, which keeps your system running properly after a kernel update. 
 
-The Nvidia GeForce 940M on Linux
-=================================
-The laptop my GPU is fitted into is no longer manufactured, however recently I noticed that this GPU is still being sold in up to date machines including the Lenovo Thinkpad T470p so I thought it was worth giving a review.
-
-Full disclosure, the system is a 2GB GeForce 940M coupled to an Intel i7 5500u with 8GB of DDR3. The card is coupled via a PCIe gen 2 4x link and the display output shares that bandwidth. Everything discussed below is using the internal 1920x1080 monitor that has a max refresh rate of 60Hz.
-
-So first let's talk compatibility:
-----------------------------------
- - **The open source nouveau driver:** Blacklist it! It can't initialise the card as it has no display outputs. This crashes the driver and leaves you with an annoying message, but an otherwise functioning machine.
- - **The Nvidia binary driver (`nvidia-35<something>`  tested on Ubuntu 16.04):** Don't install it! It WILL brick your OS and leave it in a state where not even the rescue terminal can save you. Just don't try it, it's ugly!
- - **Bumblebee is your friend:** [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) is a project that wraps the Nvidia binary in a lot of cotton wool and magic, repackages it with it's own personal X server and then provides functionality to launch applications on a virtual screen in that X server and feed the image back to your window manager. **Find a distro that supports and packages this.** If you have a well packaged copy of Bumblebee you will have no problems with the card and a very enjoyable experience. 
- 
-Lets talk Bumblebee:
---------------------
-So Bumblebee is a complex and quirky thing. Firstly when you install it you have to be vigilant about which version of the Nvidia driver is being packaged along with it. Newer drivers have better game support and are more likely to give you a good experience. If you are on Arch Linux then following the [instructions](https://wiki.archlinux.org/index.php/Bumblebee#Installing_Bumblebee_with_Intel.2FNVIDIA) will ensure that you always have the latest version. On Ubuntu you cannot be so confident. The first time I installed it I somehow got it to install 352, the latest packaged at the time; however I cannot remember how because six months later it insisted on installing the ancient 304 driver (which actually predates and does not support the 940MX).
-
-Once installed Bumblebee remains quirky. For example there are 2 commands for passing applications to the GPU: `optirun` and `primusrun`. (It is noteworthy that the later is packaged separately in the `primus` package) Many applications do not work with both. For instance Steam games are typically more reliable with `primusrun`. `nvidia-settings` also becomes fun. the command on it's own can't connect to the GPU and `optirun nvidia-settings` can't find the display (makes sense as none is attached to the Nvidia GPU). The workaround is posted [here](https://wiki.archlinux.org/index.php/Bumblebee#General_usage).
