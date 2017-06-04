@@ -44,7 +44,7 @@ The second "problem", although this is more of a matter of taste, is that the de
 
 I could at this point add a few remarks about my dislike of many GNOME design decisions, however this article is about Arch Linux not GNOME. Here instead I will just note that I may try some alternatives. 
 
-Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940MX. (See below for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
+Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940M. (See below for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
 
 Week 2: (17/05/17)
 =======
@@ -61,7 +61,19 @@ The printer has returned to it's coma.
 
 **Recommendation:** Set up your printer drivers *before* you need to print something.
 
-<script src="https://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633.js"></script>
+Week 4: (04/06/17)
+=======
+
+*Working with the AUR and closing remarks.*
+
+Lets start with the AUR. The AUR is something that makes little sense to me. It's principle and reason to exist are clear enough; the problem I find with its implementation. Many people I have discussed this with make comparisons to PPA's on Ubuntu, however I find this to be a poor comparison. Firstly PPA's simply provide an alternate repository source for .deb package files; the AUR provides something more comparable to a PIP sdist package. AUR packages must be built by the end-user, and at the end of the build process the user is left with a local package install-able by pacman.
+
+This leads to my second issue with the AUR, it has not been integrated into the core Arch packaging system, namely pacman. Again comparing with Ubuntu PPA's, PPA's are checked for updates by apt. The AUR gives you a local package, and thus pacman cannot check for an update. In isolation these design decisions make a moderate amount of sense, from a security or simplicity standpoint; but from the end user view I am left scratching my head, as the user experience creates a firm division, leaving user repositories as definite second class citizens in the system. 
+
+There are wrappers and managers that seek to improve this situation, however unsurprisingly none of these are made available in the main pacman repositories; to me this shows a firm stance of hostility toward user packages from the Arch core development community. I found that this has soured what has largely been a positive experience from Arch. There are a lot of people that tell me this is by design and that I simply don't understand the underlying decisions. This is probably true, but ultimately I am writing this from the prospective of an end user, where such reasons matter less than the end result.
+
+<script src="httpsgh://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633.js"></script>
+
 
 The Nvidia GeForce 940M on Linux
 =================================
