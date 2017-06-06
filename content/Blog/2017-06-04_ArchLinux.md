@@ -1,5 +1,5 @@
 Title: So I tried Arch
-Date: 
+Date: 2017-06-04
 Tags: Linux, Arch Linux
 
 This article documents my experiences getting to grips with Arch Linux over the first month of using it. I installed it on my day to day laptop and used it nearly exclusively. My uses include normal web stuff, gaming, and software development. As Linux Distros are a rather contentious topic I would like to remind users that these thoughts are based exclusively on my experiences over the last month, and not necessarily always after reading the manual. (Lets face it, when you are in a hurry you don't always have time to read the wiki.) Note that many of my remarks below are more opinion than fact and in places quite candid.
