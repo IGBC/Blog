@@ -2,18 +2,18 @@ Title: So I tried Arch
 Date: 
 Tags: Linux, Arch Linux
 
-This article documents my experiences getting to grips with arch over the first month of using it. I installed it on my day to day laptop and used it nearly exclusively. My uses include normal web stuff, gaming, and software development. As Linux Distros are a rather contentious topic I would like to remind users that these thoughts are based exclusively on my experiences over the last month, and not necessarily always after reading the manual. (Lets face it, when you are in a hurry you don't always have time to read the wiki.) Note that many of my remarks below are more opinion than fact and in places quite candid.
+This article documents my experiences getting to grips with Arch Linux over the first month of using it. I installed it on my day to day laptop and used it nearly exclusively. My uses include normal web stuff, gaming, and software development. As Linux Distros are a rather contentious topic I would like to remind users that these thoughts are based exclusively on my experiences over the last month, and not necessarily always after reading the manual. (Lets face it, when you are in a hurry you don't always have time to read the wiki.) Note that many of my remarks below are more opinion than fact and in places quite candid.
 
 Day 0: (04/05/17)
 ======
 
 *Oh god, why is this so hard...?*
 
-So the installer is just a shell. In theory this is a good idea, it gives you complete control from the moment the installer boots. I like that but it has it's drawbacks. Firstly the [Arch Linux installation guide](https://wiki.archlinux.org/index.php/Installation_guide) is arguably too in depth and makes the entire process seem more daunting than it really needs to be. Secondly there are several wide and gaping pits for both inexperienced users and Linux veterans to fall into. For example disk encryption has to be set up manually, completely manually. Have you ever heard of the "Discard" Keyword? No? Shame because it is an important part of setting up an encrypted file system on an SSD. 
+So the installer is just a shell. In theory this is a good idea, it gives you complete control from the moment the installer boots. I like that but it has it's drawbacks. Firstly the [Arch Linux installation guide](https://wiki.archlinux.org/index.php/Installation_guide) is arguably too in depth and makes the entire process seem more daunting than it really needs to be. Secondly there are several gaping pits for both inexperienced users and Linux veterans to fall into. For example disk encryption has to be set up manually, completely manually. Have you ever heard of the "Discard" Keyword? No? Shame because it is an important part of setting up an encrypted file system on an SSD. 
 
-**Recommendation:** Have someone on hand who has done this before to help you.
+**Recommendation:** If you're doing this for the first time, have someone on hand who has done this before to help you.
 
-Once you get past the daunt of configuring your own OS nearly from scratch with basically no safety net the steps needed to complete the installation are nearly invariably the same, and surprisingly simple:
+Once you get past the daunt of configuring your own OS nearly from scratch, with basically no safety net, the steps needed to complete the installation are nearly invariably the same, and surprisingly simple:
 
   - Wipe the disk 
   - Partition and format the disk
@@ -46,20 +46,20 @@ The second "problem", although this is more of a matter of taste, is that the de
 
 I could at this point add a few remarks about my dislike of many GNOME design decisions, however this article is about Arch Linux not GNOME. Here instead I will just note that I may try some alternatives. 
 
-Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940M. (See an upcomming article for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
+Thankfully Graphics drivers are a different story. The system this anecdote is being written about is a small laptop fitted with a Nvidia GeForce 940M. (See an upcoming article for a review) Thankfully installing [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee) with the latest Nvidia binary driver was easy, as everything was correctly packaged and self configured. I had a functioning GPU accelerated driver before I even had an X server.
 
 Week 2: (17/05/17)
 =======
 
 *Why won't this f***cking printer work*
 
-So far everything has been working fine with the arch installation. Gnome is a f*cking nightmare but that's normal. This is a blog post about Arch not Gnome so I won't get into that. But now it is time to print something. Everyone knows printers only work if you sacrifice a goat, and everyone knows its worse on Linux.
+So far everything has been working fine with the Arch installation. Gnome is a f*cking nightmare but that's normal. This is a blog post about Arch not Gnome so I won't get into that. But now it is time to print something. Everyone knows printers only work if you sacrifice a goat, and everyone knows its worse on Linux.
 
 The problem comes when you consider the Arch way of packaging things; installing CUPS does not configure anything, leaving you fumbling through wiki and man pages desperate for some simple step by step guide on how to make it work. 
 
 I would love to provide one however after much confusion, deadlines pressing, and doubt that the printer even worked I relented and handed my laptop to someone who knew what they were doing. After 30 minutes of frantic black magic he declared he didn't know why it didn't work. At that point and no point again since a piece of paper shot out of the printer containing my document. 
 
-The printer has returned to it's coma.
+The printer has since returned to it's coma.
 
 **Recommendation:** Set up your printer drivers *before* you need to print something.
 
@@ -77,5 +77,5 @@ There are wrappers and managers that seek to improve this situation, however uns
 **Final remarks:**
 For the last month, with the exception of few quirks, Arch has been a reliable Linux platform. I have had numerous issues with my system over the last weeks, however all of them can be traced to the gnome desktop environment I am using. Arch provides a high degree of control of your system, providing you are willing to accept systemD at the core. For me personally I am willing to overlook the issues I raised about AUR to keep that level of control, and the well packaged core. However one thing I cannot look past is Gnome. That gets uninstalled tonight. 
 
-There are many things I left undiscussed here, and I may revisit this topic, or ammend this article later, however for now I will leave one trick I did not yet try. [This](https://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633) is the Arch kernel update survival kit, which keeps your system running properly after a kernel update. 
+There are many things I left undiscussed here, and I may revisit this topic, or amend this article later, however for now I will leave one trick I did not yet try. [This](https://gist.github.com/XenGi/39c1e8b023fe5bee7c924258367cd633) is the Arch kernel update survival kit, which keeps your system running properly after a kernel update.
 
