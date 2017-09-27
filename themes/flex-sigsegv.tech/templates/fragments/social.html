@@ -1,0 +1,15 @@
+{% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
+            <h3>{{ SOCIAL_WIDGET_NAME | default('Find Me:') }}</h3>
+            <ul>
+                {% if FEED_ALL_ATOM %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                {% endif %}
+                {% if FEED_ALL_RSS %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">rss feed</a></li>
+                {% endif %}
+
+            {% for name, link in SOCIAL %}
+                <li><a href="{{ link }}">{{ name }}</a></li>
+            {% endfor %}
+            </ul>
+{% endif %}

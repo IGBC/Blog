@@ -3,13 +3,14 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Segfault'
-SITENAME = "\"If it isn't broken... Break it!\""
+SITENAME = 'Segfaults\'s Ramblings' 
+SITEDESCRIPTION = "\"If it isn't broken... Break it!\""
 SITEURL = ''
 
 PATH = 'content'
 STATIC_PATHS = ['.']
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'en'
 
@@ -29,5 +30,7 @@ SOCIAL = (('IGBC', 'https://www.github.com/IGBC'),
 
 DEFAULT_PAGINATION = 20
 
+THEME = 'themes/flex-sigsegv.tech'
+
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True

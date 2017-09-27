@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+}
+    
+a {
+    color: inherit;
+}
+
+a:hover {
+    font-weight:bold;
+}
+
+h1,h2,h3 {
+    line-height: 1.2;
+}
+
+h1 a,h2 a {
+    text-decoration: none;
+}
+
+aside {
+    background-color: #DDD;
+}
+
+main {
+    margin: 2ex auto;
+    max-width: 40em;
+    padding: 0 2em;
+}
+
+social { display: none; }
+
+purple {
+    color: #FFF;
+    padding: 2ex;
+    
+    display: block;
+    background: -moz-linear-gradient(-45deg, rgba(110,54,103,0) 5%, rgba(110,54,103,1) 50%), url('../images/grid.svg'); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(110,54,103,0) 5%,rgba(110,54,103,1) 50%), url('../images/grid.svg'); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(110,54,103,0) 5%,rgba(110,54,103,1) 50%), url('../images/grid.svg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+purple h1 {
+    padding-left: 8ex;
+}
+purple p {padding-left: 12ex;}
+
+.logo {
+    position: absolute;
+    width: 10ex;
+    left: 2ex;
+    border-radius: 50%;
+    border: 1px solid #888;
+}
+
+.highlight {
+    background-color: #ededed;
+    overflow-x: scroll;
+    width: 40em;
+}
+td {
+    padding: 1ex;
+}
+
+nav ul {
+    background-color: #1A0315;
+    color: #FFF;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+social ul, nav ul {
+    margin: 0;
+    padding: 0 2ex;
+    list-style-type: none;
+}
+
+social li a, nav li a {
+    display: block;
+	text-decoration: none;
+	padding: .3em .3em;
+}
+
+social li a {
+    background-repeat: no-repeat;
+	background-position: 0 1ex;
+	padding-left: 1.2em;
+    background-size: 1em 1em;
+}
+
+/* Icons */
+social a[href*='about.me'] {background-image: url('../images/icons/aboutme.png');}
+social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucket.png');}
+social a[href*='delicious.com'] {background-image: url('../images/icons/delicious.png');}
+social a[href*='digg.com'] {background-image: url('../images/icons/digg.png');}
+social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');}
+social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
+social a[href*='github.com'],
+social a[href*='git.io'] {background-image: url('../images/icons/github.png');}
+social a[href*='gittip.com'] {background-image: url('../images/icons/gittip.png');}
+social a[href*='plus.google.com'] {background-image: url('../images/icons/google-plus.png');}
+social a[href*='groups.google.com'] {background-image: url('../images/icons/google-groups.png');}
+social a[href*='news.ycombinator.com'],
+social a[href*='hackernewsers.com'] {background-image: url('../images/icons/hackernews.png');}
+social a[href*='last.fm'], social a[href*='lastfm.'] {background-image: url('../images/icons/lastfm.png');}
+social a[href*='linkedin.com'] {background-image: url('../images/icons/linkedin.png');}
+social a[href*='reddit.com'] {background-image: url('../images/icons/reddit.png');}
+social a[type$='atom+xml'], social a[type$='rss+xml'] {background-image: url('../images/icons/rss.png');}
+social a[href*='slideshare.net'] {background-image: url('../images/icons/slideshare.png');}
+social a[href*='speakerdeck.com'] {background-image: url('../images/icons/speakerdeck.png');}
+social a[href*='stackoverflow.com'] {background-image: url('../images/icons/stackoverflow.png');}
+social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
+social a[href*='vimeo.com'] {background-image: url('../images/icons/vimeo.png');}
+social a[href*='youtube.com'] {background-image: url('../images/icons/youtube.png');}
+
+@media screen and (min-width: 64em) {
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 18em;
+        height: 100%;
+        border-right: 1px solid #888;
+        text-align: center;
+    }
+
+    purple p {padding-left: 0;}
+
+    body {
+        margin-left: 18em;
+    }
+    
+    social { 
+        padding: 1ex;
+        display: block;
+        text-align: left;
+    }
+}
