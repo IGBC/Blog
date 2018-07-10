@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    line-height: 1.6;
-    font-size: 18px;
+    font-size: 14px;
     color: #444;
+    font-family:Sans;
+    line-height:1.4;
 }
     
 a {
@@ -29,6 +30,10 @@ main {
     margin: 2ex auto;
     max-width: 40em;
     padding: 0 2em;
+    font-size: 16px;
+    color: #444;
+    font-family:Sans;
+    line-height:1.6;
 }
 
 social { display: none; }
@@ -52,7 +57,7 @@ purple p {padding-left: 12ex;}
     width: 10ex;
     left: 2ex;
     border-radius: 50%;
-    border: 1px solid #888;
+    border: 2px solid #CCC;
 }
 
 .highlight {
@@ -71,6 +76,10 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+}
+
+.float-right {
+	float: right;
 }
 
 social ul, nav ul {
@@ -108,6 +117,7 @@ social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.
 social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
 social a[href*='github.com'],
 social a[href*='git.io'] {background-image: url('../images/icons/github.png');}
+social a[href*='gitlab.com'] {background-image: url('../images/icons/gitlab.png');}
 social a[href*='gittip.com'] {background-image: url('../images/icons/gittip.png');}
 social a[href*='plus.google.com'] {background-image: url('../images/icons/google-plus.png');}
 social a[href*='groups.google.com'] {background-image: url('../images/icons/google-groups.png');}

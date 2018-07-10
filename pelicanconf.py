@@ -14,6 +14,14 @@ TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'en'
 
+# URL Settings
+AUTHOR_URL = '' 
+AUTHOR_SAVE_AS = '' # Turn Author Pages Off
+ARTICLE_URL = 'articles/{slug}.html'
+ARTICLE_SAVE_AS = 'articles/{slug}.html'
+ARTICLE_LANG_URL = 'articles/{lang}/{slug}.html'
+ARTICLE_LANG_SAVE_AS = 'articles/{lang}/{slug}.html'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
