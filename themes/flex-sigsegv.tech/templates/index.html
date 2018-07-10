@@ -23,13 +23,7 @@
     </p>
   </header>
   <div>
-    {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
-      {{ article.summary }}
-      <br>
-      <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ _('Continue reading') }}</a>
-    {% else %}
-      {{ article.content }}
-    {% endif %}
+    {{ article.content }}
   </div>
   {% if not loop.last %}
   <hr />

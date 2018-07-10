@@ -25,10 +25,11 @@ AUTHOR_FEED_RSS = None
 LINKS = ()
 
 # Social widget
-SOCIAL = (('IGBC', 'https://www.github.com/IGBC'),
-          ('@nasasegcorp', 'https://twitter.com/nasasegcorp'),)
+SOCIAL = (('@IGBC', 'https://www.github.com/IGBC'),
+          ('@IGBC', 'https://gitlab.com/IGBC'),
+          ('@altsegcat', 'https://twitter.com/altsegcat'),)
 
-DEFAULT_PAGINATION = 20
+DEFAULT_PAGINATION = 1
 
 THEME = 'themes/flex-sigsegv.tech'
 
