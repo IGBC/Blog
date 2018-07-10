@@ -92,6 +92,13 @@ social li a {
     background-size: 1em 1em;
 }
 
+img.emoji{
+    height:1.25em;
+    width:1.25em;
+    padding:0 .05em 0 .1em;
+    vertical-align:-0.2em
+}
+
 /* Icons */
 social a[href*='about.me'] {background-image: url('../images/icons/aboutme.png');}
 social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucket.png');}
