@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Segfault'
 SITENAME = 'Segfaults\'s Ramblings' 
-SITEDESCRIPTION = "\"If it isn't broken... Break it!\""
+SITEDESCRIPTION = ""
 SITEURL = ''
 
 PATH = 'content'

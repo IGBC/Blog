@@ -23,7 +23,7 @@ h1 a,h2 a {
 }
 
 aside {
-    background-color: #DDD;
+    background-color: #FAFAFA;
 }
 
 main {
@@ -41,11 +41,8 @@ social { display: none; }
 purple {
     color: #FFF;
     padding: 2ex;
-    
+    background: rgba(110,54,103,1);
     display: block;
-    background: -moz-linear-gradient(-45deg, rgba(110,54,103,0) 5%, rgba(110,54,103,1) 50%), url('../images/grid.svg'); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(110,54,103,0) 5%,rgba(110,54,103,1) 50%), url('../images/grid.svg'); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(110,54,103,0) 5%,rgba(110,54,103,1) 50%), url('../images/grid.svg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 purple h1 {
     padding-left: 8ex;
@@ -139,9 +136,9 @@ social a[href*='youtube.com'] {background-image: url('../images/icons/youtube.pn
         position: fixed;
         top: 0;
         left: 0;
-        width: 18em;
+        width: 22em;
         height: 100%;
-        border-right: 1px solid #888;
+        border-right: 1px solid #F0F0F0;
         text-align: center;
     }
 
