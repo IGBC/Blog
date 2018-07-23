@@ -9,6 +9,20 @@
 {% block title %}{{ article.title|striptags }}{% endblock %}
 
 {% block content %}
+<div class="pagination">
+  {% if article.prev_article_in_category %}
+    <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url }}">
+      Prev - {{ article.prev_article_in_category.title }}
+    </a>
+  {% endif %}
+  
+  {% if article.next_article_in_category %}
+    <a class="float-right" href="{{ SITEURL }}/{{ article.next_article_in_category.url }}">
+      Next - {{ article.next_article_in_category.title }}
+    </a>
+  {% endif %}
+</div>
+
 <article class="single">
   <header>
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
@@ -41,4 +55,17 @@
 
   {% include "fragments/disqus_script.html" %}
 </article>
+<div class="pagination">
+  {% if article.prev_article_in_category %}
+    <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url }}">
+      Prev - {{ article.prev_article_in_category.title }}
+    </a>
+  {% endif %}
+  
+  {% if article.next_article_in_category %}
+    <a class="float-right" href="{{ SITEURL }}/{{ article.next_article_in_category.url }}">
+      Next - {{ article.next_article_in_category.title }}
+    </a>
+  {% endif %}
+</div>
 {% endblock %}

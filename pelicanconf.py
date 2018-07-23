@@ -14,6 +14,8 @@ TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'en'
 
+PLUGINS = ['neighbors']
+
 # URL Settings
 AUTHOR_URL = '' 
 AUTHOR_SAVE_AS = '' # Turn Author Pages Off

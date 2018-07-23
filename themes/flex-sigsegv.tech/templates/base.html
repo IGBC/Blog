@@ -49,8 +49,17 @@
     </purple>
     <nav>
         <ul class="nav">
-              {% for cat, null in categories %}
-              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              {% for cat, art in categories %}
+                  <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ art[0].url }}">{{ cat }}</a></li>
+                  {% if cat == category %}
+                       </ul>
+                       <ul class="sub-nav">
+		           {% for a in art %}
+			       <li><a href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a></li>
+			   {% endfor %}
+                       </ul>	
+                       <ul>
+                  {% endif %}
               {% endfor %}
               
               {% for page in pages|sort(attribute='title') %}
@@ -62,6 +71,9 @@
               {% endfor %}
         </ul>
     </nav>
+
+    
+
     <social>
     {% include "fragments/social.html" %}
     <h3>All Tags:</h3>

@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-    font-weight:bold;
+    text-shadow: 1px 0px 0px black;
 }
 
 h1,h2,h3 {
@@ -72,29 +72,41 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: block;
+    font-weight:bold;
+    padding: 0 2ex;
 }
 
 .float-right {
 	float: right;
 }
 
+.sub-nav {
+	background-color: #FAFAFA;
+	color: #444;
+}
+
+.sub-nav li {
+    border-top: 1px solid #F0F0F0;
+    font-weight: normal;
+}
+
 social ul, nav ul {
     margin: 0;
-    padding: 0 2ex;
     list-style-type: none;
+    padding: 0;
 }
 
 social li a, nav li a {
     display: block;
-	text-decoration: none;
-	padding: .3em .3em;
+    text-decoration: none;
+    padding: .3em .3em;
 }
 
 social li a {
     background-repeat: no-repeat;
-	background-position: 0 1ex;
-	padding-left: 1.2em;
+    background-position: 0 1ex;
+    padding-left: 1.2em;
     background-size: 1em 1em;
 }
 
@@ -139,7 +151,7 @@ social a[href*='youtube.com'] {background-image: url('../images/icons/youtube.pn
         width: 22em;
         height: 100%;
         border-right: 1px solid #F0F0F0;
-        text-align: center;
+        /*text-align: center;*/
     }
 
     purple p {padding-left: 0;}
