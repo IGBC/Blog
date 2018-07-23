@@ -55,7 +55,11 @@
                        </ul>
                        <ul class="sub-nav">
 		           {% for a in art %}
-			       <li><a href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a></li>
+                               {% if article %}
+			           <li{% if a.title == article.title %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a></li>
+                               {% else %}
+                                   <li>nope <a href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a></li>
+                               {% endif %}
 			   {% endfor %}
                        </ul>	
                        <ul>
