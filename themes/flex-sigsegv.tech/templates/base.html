@@ -80,10 +80,12 @@
 
     <social>
     {% include "fragments/social.html" %}
-    <h3>All Tags:</h3>
-    {% for tag, articles in tags|sort %}
-        <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-    {% endfor %}
+    <tags>
+        <h3>All Tags:</h3>
+            {% for tag, articles in tags|sort %}
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            {% endfor %}
+    </tags> 
     </social>        
   </aside>
   <main>

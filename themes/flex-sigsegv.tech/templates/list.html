@@ -25,8 +25,18 @@
       {% endif %}
     </p>
   </header>
-  <div>
-    {{ article.content }}
+  {% if summarise %}
+    <div>
+      {{ article.summary }}
+    </div>
+    <div class="pagination">
+      <a href="{{ SITEURL }}/{{ article.url }}">Read More</a>
+    </div>
+  {% else %}
+    <div>
+      {{ article.content }}
+    </div>
+  {% endif %}
   </div>
   {% if not loop.last %}
   <hr />

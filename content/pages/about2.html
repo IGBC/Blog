@@ -5,9 +5,9 @@
    </head>
    <body>
       <style>
-	html{background-color:#DDD;}
+	html{background-color:#F8F8F8;}
 	main{
-            background-color:#DDD;
+            background-color:#F8F8F8;
             font-size:14px;
             margin:2em auto;
             max-width:250px;
@@ -26,7 +26,37 @@
            width:100%}
        purple{display: none;}
        header{display: none;}
-       aside{border:none;}
+       aside{
+           border: none;
+       }
+       
+       nav ul {
+         background-color: #F8F8F8;
+         color: #444;
+         font-size: 18px;
+       }
+
+       nav ul li {
+         display: inline-block;
+
+       }
+	@media screen and (min-width: 76em) {
+	    aside {
+		position: relative;
+		width: 100%;
+		border: none;
+	    }
+	    body {
+                margin-left: 0;
+            }
+      } 
+      social {
+        display: none;
+      }
+
+      tags {
+        display: none;
+      }
       </style>
       <img src="https://pbs.twimg.com/profile_images/961245032488620032/tV8kE_7P_400x400.jpg" 
 class="round"/> 
@@ -34,9 +64,9 @@ class="round"/>
       <p>AKA: <b>Lauren</b></p>
       <p>Creatively Insane Hacker Girl. Tech Witch. - trans* Avoids mirrors - I will void your 
 warranty.⚡ [she/her] 🏳️‍🌈</p>
-      <p><a href="https://github.com/IGBC"><img class="emoji" src="github_icon.svg" title="Github 
+      <p><a href="https://github.com/IGBC"><img class="emoji" src="{filename}/pages/github_icon.svg" title="Github 
 logo"/> @IGBC</a></p>
-      <p><a href="https://twitter.com/altsegcat"><img class="emoji" src="twitter_icon.png" 
+      <p><a href="https://twitter.com/altsegcat"><img class="emoji" src="{filename}/pages/twitter_icon.png" 
 title="Twitter logo"/> @altsegcat</a></p>
    </body>
 </html>

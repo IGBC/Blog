@@ -22,11 +22,11 @@ Well for starter's development is a little uncomfortable. Eclipse and Gradle don
 
 The game's feel however is very unique. I am too young to remember DOS console games, or even older classics, however seeing a full game running in the 80 by 60 characters of my modern gnome terminal fills me with a nostalgia for a time when computers, and maybe also the world, were simpler. But maybe that's just me. It's actually surprisingly immersive, even in the little demo I made. 
 
-<img src="/Blog/2017-02-20_WritingAGameForTheTerminal-TerminalGame01.png" style="margin: auto; display: block; width: 100%;  max-width: 600px;" /> 
+![Multi Select Menu]({filename}/Blog/2017-02-20_WritingAGameForTheTerminal-TerminalGame01.png)
 
 It isn't without very hard limitations though. For instance while immersive any game written with this will be very limited in it's use of visuals to control the experience. Audio is possible but could go against the original idea of it being a text mode game. The other downside is that it is harder for the end user to enjoy. Today players are used to clicking on a binary and playing. With this however the player must open the jar file in a terminal. Debugging terminal incompatibilities would also be very frustrating for the user, which might explain why all text games released today usually have some sort of game window.
 
-<img src="/Blog/2017-02-20_WritingAGameForTheTerminal-TerminalGame02.png" style="margin: auto; display: block; width: 100%;  max-width: 600px;" /> 
+![Natural Text Entry]({filename}/Blog/2017-02-20_WritingAGameForTheTerminal-TerminalGame02.png) 
 
 Limitations aside though I think this is kinda cute and I don't plan on porting my game to have a window during any time soon. Once it reaches production that might have to change though. However I am heavily biased I wrote the damn thing.
 

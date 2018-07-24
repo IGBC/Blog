@@ -36,6 +36,12 @@ main {
     line-height:1.6;
 }
 
+main img {
+    max-width: 100%;
+    margin: 2ex auto;
+    display: block;
+}
+
 social { display: none; }
 
 purple {
@@ -60,9 +66,9 @@ purple p {padding-left: 12ex;}
 .highlight {
     background-color: #ededed;
     overflow-x: scroll;
-    width: 40em;
+    width: 100%;
 }
-td {
+main td {
     padding: 1ex;
 }
 
@@ -96,6 +102,11 @@ nav ul li {
     background-color: #FFF;
 }
 
+.pagination a {
+    color: #000;
+    font-size: 18px;
+}
+
 social ul, nav ul {
     margin: 0;
     list-style-type: none;
@@ -116,6 +127,8 @@ social li a {
 }
 
 img.emoji{
+    display: inline;
+    margin: 0;
     height:1.25em;
     width:1.25em;
     padding:0 .05em 0 .1em;
