@@ -19,11 +19,8 @@ At the heart of this synthesizer is a 4093 schmitt-trigger input NAND gate. Thes
 
 Currently this exists only as a schematic and a single prototype on a breadboard.
 
-<!-- This is hardcoded into my source files (which are markdown) I begrudge my theme for not doing this automatically -->
-<img src="/Projects/SegNAND-Schematic1.svg" style="width: 100%;" /> 
-<img src="/Projects/SegNAND-Schematic2.svg" style="width: 100%;" /> 
-<!-- # ![SegNAND Schematic](/Projects/SegNAND-Schematic1.svg) -->
-<!-- # ![SegNAND Schematic](/Projects/SegNAND-Schematic2.svg) -->
+![Schematic 1]({filename}/Projects/SegNAND-Schematic1.svg)
+![Schematic 2]({filename}/Projects/SegNAND-Schematic2.svg)
 
 *SegNAND Schematics*
 
