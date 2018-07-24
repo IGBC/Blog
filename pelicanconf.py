@@ -39,8 +39,6 @@ SOCIAL = (('@IGBC', 'https://www.github.com/IGBC'),
           ('@IGBC', 'https://gitlab.com/IGBC'),
           ('@altsegcat', 'https://twitter.com/altsegcat'),)
 
-DEFAULT_PAGINATION = 1
-
 THEME = 'themes/flex-sigsegv.tech'
 
 # Uncomment following line if you want document-relative URLs when developing
