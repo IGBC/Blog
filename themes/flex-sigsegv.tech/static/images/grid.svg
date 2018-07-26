@@ -1,0 +1,13 @@
+<svg version="1.1" baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg" 
+     width="400px" height="400px" viewBox="0 0 400 400">   
+
+   <defs>
+   	  <pattern id="GridPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+         <line x1="0" y1="0" x2="10" y2="0" stroke="white" stroke-width="1px" />
+         <line x1="0" y1="0" x2="0" y2="10" stroke="white" stroke-width="1px" />
+      </pattern> 
+   </defs>
+   <rect fill="rgb(110,54,103)" x="0" y="0" width="400" height="400"/>
+   <rect fill="url(#GridPattern)" x="0" y="0" width="400" height="400"/>
+</svg>

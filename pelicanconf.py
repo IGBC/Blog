@@ -3,15 +3,26 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Segfault'
-SITENAME = "\"If it isn't broken... Break it!\""
+SITENAME = 'Segfaults\'s Ramblings' 
+SITEDESCRIPTION = ""
 SITEURL = ''
 
 PATH = 'content'
 STATIC_PATHS = ['.']
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'en'
+
+PLUGINS = ['neighbors']
+
+# URL Settings
+AUTHOR_URL = '' 
+AUTHOR_SAVE_AS = '' # Turn Author Pages Off
+ARTICLE_URL = 'articles/{slug}.html'
+ARTICLE_SAVE_AS = 'articles/{slug}.html'
+ARTICLE_LANG_URL = 'articles/{lang}/{slug}.html'
+ARTICLE_LANG_SAVE_AS = 'articles/{lang}/{slug}.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -24,10 +35,11 @@ AUTHOR_FEED_RSS = None
 LINKS = ()
 
 # Social widget
-SOCIAL = (('IGBC', 'https://www.github.com/IGBC'),
-          ('@nasasegcorp', 'https://twitter.com/nasasegcorp'),)
+SOCIAL = (('@IGBC', 'https://www.github.com/IGBC'),
+          ('@IGBC', 'https://gitlab.com/IGBC'),
+          ('@altsegcat', 'https://twitter.com/altsegcat'),)
 
-DEFAULT_PAGINATION = 20
+THEME = 'themes/flex-sigsegv.tech'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
