@@ -14,6 +14,10 @@ a:hover {
     text-shadow: 1px 0px 0px black;
 }
 
+h1 {
+    font-size: 28px;
+}
+
 h1,h2,h3 {
     line-height: 1.2;
 }
@@ -52,6 +56,7 @@ purple {
 }
 purple h1 {
     padding-left: 8ex;
+    font-size: 24px;
 }
 purple p {padding-left: 12ex;}
 
