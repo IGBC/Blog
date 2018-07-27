@@ -23,7 +23,7 @@ In this article I will be using the most naive model of an op-amp possible. An i
 
 Spice describes this behaviour as a voltage controlled voltage source, or VCVS for short. Let's introduce the spice symbol for a VCVS (Yes SPICE has symbols). 
 
-![VCVS symbol]() 
+![VCVS symbol]({filename}./2018-07-23_UsingSpiceInKicad5_2_VCVSSymbol.png) 
 
 This symbol maps to our equation, so we can use it to model our op amp.
 
