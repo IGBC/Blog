@@ -81,16 +81,16 @@ it's name from the power symbol.
 
 Lastly you need to annotate the schematic before continuing. 
 
-![Schematic Used for this Tutorial]({filename}/Blog/2018-07-09_Might_as_well_404)
+![Schematic Used for this Tutorial]({filename}./2018-07-09_UsingSpiceInKicad5_Circuit.png)
 
 This is a single pole low pass filter. We can visualise it's output with an AC frequency sweep. Lets do this 
 now.
 
-  1. Start by Selecting Tools -> Simulator From inside EESchema. 
-  2. You'll  be met with a simulation window Click "Settings"
-  3. From the settings window select "AC"
-  4. Enter 1000, 10, 10000 for Number of points, start / stop frequencies. 
-  5. Tick both Check boxes, and click OK.
+  1. Start by Selecting *"Tools -> Simulator"* From inside EESchema. 
+  2. You'll  be met with a simulation window. Click *"Settings"*
+  3. From the settings window select *"AC"*
+  4. Enter 1000, 10, 10000 for Number of points, start and stop frequencies respectively. 
+  5. Tick both Check boxes, and click *"OK"*.
 
 You are now ready to run the simulation. Note that the simulation settings are lost if you close the 
 simulator window, however the simulation will reload the schematic every time the run button is clicked.
@@ -110,7 +110,7 @@ Unable to find definition of model  - default assumed
 
 Ignore that for a second and click "Add Signals", then select "V(/OUT)" and click OK. 
 
-![Expected False Output]({filename}/Blog/2018-07-09_Might_as_well_404)
+![Expected False Output]({filename}./2018-07-09_UsingSpiceInKicad5_FalseOutput.png)
 
 I will assume you know how to read one of these graphs. If you don't its called a 
 [Bode Plot](https://en.wikipedia.org/wiki/Bode_plot), and you will need to learn how to read them 
@@ -122,7 +122,10 @@ I mentioned earlier that SPICE doesn't understand components like connectors. We
 connectors to the simulation*, which created the error `j1 /in 0 conn_coaxial Unable to find definition of 
 model  - default assumed` This error is benign, as the simulation is assuming 
 the component has no effect on the circuit. This is usually true; however in our case J1 is actually driving 
-the circuit. So for the purposes of simulation we need to replace the connector with a voltage source. 
+the circuit. With it ommited, there is no output to measure. So for the purposes of simulation we need to
+replace the connector with a voltage source. 
+
+Lets fix this now.
 
   1. Return to EESchema (Don't close the simulation window)
   2. Edit J1 (press E on it because the simulator has overridden the current tool)
@@ -135,7 +138,7 @@ What you have just done is told KiCAD to export J1 as a voltage source with a 1V
 
 Now return to the simulator window and click run again.
 
-![Expected Correct Output]({filename}/Blog/2018-07-09_Might_as_well_404)
+![Expected Correct Output]({filename}./2018-07-09_UsingSpiceInKicad5_CorrectOutput.png)
 
 Eureka!
 
