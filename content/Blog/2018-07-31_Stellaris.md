@@ -1,4 +1,5 @@
-title: Stellaris has a big Problem
+title: Stellaris Vs Your Digital Rights
+slug: stellaris-has-a-big-problem
 
 Stellaris is a 4X like galactic level RTS released in 2016 by Paradox Interactive. The game was received by a mostly positive audience, and commended for continuing Paradox's tendency to release titles with day one Linux support. To me the game had a flair I had not seen since childhood, making this game feel like close a spiritual successor to Galactic Civilizations II (Also published by Paradox).
 
@@ -22,7 +23,7 @@ Paradox set its self up for failure in early 2018 with the building hype around 
 
 Unfortunately Apocalypse failed to meet expectations. The advertisement of major *additions* to game-play, and a completely new experience, was realized as major *changes* to game-play with a familiar but jarringly alien experience.
 
-#### The problem is everyone got this jarring experience. Even when didn't buy the upgrade.
+#### The problem is everyone got this jarring experience. Even when they didn't buy the upgrade.
 
 Stellaris can also be played as a multiplayer game. So ever since its first expansion Paradox has released an update alongside each expansion or DLC to keep everyone playing essentially the same game. This has the marketable side effect of the base game benefiting from mild feature creep, but critically maintained compatibility between all games. The game never really changed much, and game updates are a regular occurrence on the Steam platform, so no one cared, and I didn't even notice.
 
