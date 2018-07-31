@@ -50,7 +50,7 @@ If you're not a player of Stellaris I will give you a moment of context. The 2.0
 
 **Ultimately this is not the product I paid for,** regardless of its overall quality. That leaves me feeling cheated by Paradox, but more so by Steam, who delivered me the change. There are a lot of ways Paradox could have handled this compatibility change better. For example a "2.0 Upgrade DLC" that is free to all players would keep everything working, but at the player could choose to return to the old content using the toggle in the Steam DLC menu. A button in the game would also work, but from a UX standpoint may be no better. 
 
-The problem is both both of those options are Paradox's responsibility. While I don't believe there is any malice in this decision we as a customer base need to ask what the implications are for developer with bad intentions.
+The problem is both both of those options are Paradox's responsibility. While I don't believe there is any malice in this decision we as a customer base need to ask what the implications are for a developer with bad intentions.
 
 #### Actually this is Valve's fault!
 
@@ -58,9 +58,10 @@ Steam, run by Valve, is the content delivery platform used by Paradox(1). Steam 
 
  * Removing content and re-adding it as a DLC.
  * Forcibly updating a game to contain some form of malware or add-ware.
- * Even bricking the game completely. 
+ * Even bricking the game completely.
+ * It might be more profitable to install a [Cryptocurrency Miner](https://steamed.kotaku.com/steam-game-vanishes-after-players-accuse-it-of-mining-b-1827981337)
 
-Valve do not require game developers to submit updates for audit before pushing them to customers, so all of the above are easily possible. The only thing preventing this foul play is that most game companies do not have an incentive to damage their products. 
+[Evidence suggests](https://www.theverge.com/2018/6/6/17435244/valve-steam-game-release-new-policy) Valve do not require game developers to submit updates for audit before pushing them to customers, so all of the above are easily possible. The only thing preventing this foul play is that most game companies do not have an incentive to damage their products.
 
 But it's proven repeatedly that publisher reputation doesn't really effect video game sales. (See Battlefront 2 - 2017) With that it's a matter of time before someone decides boosting sales of a sequel is worth bricking it's predecessor. It's up to us as consumers to put pressure on Valve and other distribution platforms to allow us to download whatever version of a game we want. Rationale for this builds when you factor in early access titles, that can quickly suffer a painful death, and the modding community, which is eternally leapfrogged by the game it is trying to support. 
 
