@@ -8,7 +8,11 @@ SITEDESCRIPTION = ""
 SITEURL = ''
 
 PATH = 'content'
-STATIC_PATHS = ['.']
+STATIC_PATHS = ['.', 'extra/robots.txt']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
+
 
 TIMEZONE = 'Europe/Berlin'
 

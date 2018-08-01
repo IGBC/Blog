@@ -21,14 +21,13 @@
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS">
   {% endif %}
 
-  <link rel="shortcut icon" href="{{ SITELOGO }}" type="image/x-icon">
-  <link rel="icon" href="{{ SITELOGO }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/avatar.jpg" type="image/x-icon">
+  <link rel="icon" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/avatar.jpg" type="image/x-icon">
   
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="{{ ROBOTS }}" />
 
   {% block meta %}
     <meta name="author" content="{{ AUTHOR }}" />
@@ -41,7 +40,7 @@
   <aside>
     <purple>
       <a href="{{ SITEURL }}">
-        <img class="logo" src="https://pbs.twimg.com/profile_images/961245032488620032/tV8kE_7P_400x400.jpg" alt="Logo" title="{{ SITENAME }}" />
+        <img class="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/avatar.jpg" alt="Logo" title="{{ SITENAME }}" />
       </a>
       <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
 
