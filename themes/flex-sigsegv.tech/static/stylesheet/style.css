@@ -146,6 +146,7 @@ social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucke
 social a[href*='delicious.com'] {background-image: url('../images/icons/delicious.png');}
 social a[href*='digg.com'] {background-image: url('../images/icons/digg.png');}
 social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');}
+social a[href*='flickr.com'] {background-image: url('../images/icons/flickr.png');}
 social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
 social a[href*='github.com'],
 social a[href*='git.io'] {background-image: url('../images/icons/github.png');}

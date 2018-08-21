@@ -41,7 +41,8 @@ LINKS = ()
 # Social widget
 SOCIAL = (('@IGBC', 'https://www.github.com/IGBC'),
           ('@IGBC', 'https://gitlab.com/IGBC'),
-          ('@altsegcat', 'https://twitter.com/altsegcat'),)
+          ('@altsegcat', 'https://twitter.com/altsegcat'),
+          ('Flickr', 'https://www.flickr.com/photos/155345791@N04/'))
 
 THEME = 'themes/flex-sigsegv.tech'
 
