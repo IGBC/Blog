@@ -3,7 +3,7 @@ Help me restore and preserve old computers, and give them a new life with loving
 
 Below are lists of parts I am looking for to restore, or use in restorations, and a list of restored machines I do not have the space to love anymore.
 
-If you are intestested in anything below, or have anything else that you think is interesting to work on (including functioning machines) please email me at [ashleytwb@gmail.com](mailto://ashleytwb@gmail.com).
+If you are intestested in anything below, or have anything else that you think is interesting to work on (including functioning machines) please email me at [segfault@mailbox.org](mailto://segfault@mailbox.org).
 
 Wanted Parts
 -------------
@@ -22,5 +22,5 @@ Looking for a New Home
 ---------------------
 | Item | Price | Location / Shipping |
 | --- | --- | --- |
-| 468 Based Desktop - 4MB RAM | Free to a Loving Home | Berlin, Germany (Pickup Only) |
+|  | *None Right Now* |  |
 
