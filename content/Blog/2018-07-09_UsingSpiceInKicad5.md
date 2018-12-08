@@ -24,10 +24,16 @@ If you're on arch congratulations, just install the following packages:
   * ngspice
 
 ### Ubuntu 18.04 
-For users of Ubuntu 18 or newer installation is as simple as 
-```
-# apt install kicad ngspice
-```
+For users of Ubuntu currently KiCAD 5 is only available through a ppa.
+Please enter these commands into the terminal to enable the ppa and install the packages.
+
+`sudo add-apt-repository --yes ppa:js-reynaud/kicad-5`
+
+`sudo apt update`
+
+`sudo apt install kicad ngspice`
+
+Detailed instructions are available on [KiCAD's Website](http://kicad-pcb.org/download/ubuntu/)
 
 ### MacOS / Windows
 On both of these platforms you will need to configure a C++ development environment from scratch. Both KiCAD 
