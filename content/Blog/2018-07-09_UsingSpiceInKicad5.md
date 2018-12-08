@@ -1,13 +1,10 @@
 title: Using SPICE in KiCAD 5 (Pt 1)
+Date: 2018-07-09
 The latest version of KiCAD brings an interesting new feature; SPICE integration allows simulating your 
 circuits straight from EESchema's schematic capture. SPICE is a powerful tool, which opens up many options 
 for verifying your circuits. Here I will only cover the details for getting started with a common use case, 
 verifying the operation of a filter, but it will cover all of the peculiars of how KiCAD interfaces with 
 SPICE.
-
-**Please note that this article references unstable features. KiCAD may (and probably will) change some 
-details of how this works. I will try to update this article as that happens, but this article will not be 
-100% up to date**
 
 **Prior Reading:** This article assumes that you are familiar with using KiCAD for schematic capture (drawing 
 a schematic into the computer in a way it can understand), and many concepts of analogue electronics, namely 
@@ -16,23 +13,21 @@ filters. A limited understanding of Circuit simulations may also be helpful.
 
 Installation
 ------------
-Installation on Linux is simple-ish. The features we need have not made it into KiCAD-Stable yet, so we need 
-to install the git packages. We also need to install the ngspice system package. Compiling KiCAD will take a 
-while. I suggest getting a cup of tea.
+Installation on Linux is simple-ish. The features we need are now in KiCAD-Stable as of 5.0, so we only need to install
+the latest kicad package for your distro:
 ### Archlinux
 If you're on arch congratulations, just install the following packages:
 
-  * kicad-scripting-git (AUR)
-  * kicad-footprints-git (AUR)
-  * kicad-packages3d-git (AUR)
-  * kicad-symbols-git (AUR)
-
-Note this will require the uninstallation of your existing KiCAD. 
-
-See here for [installing AUR packages](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) but I recommend you install an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers)
+  * kicad
+  * kicad-library
+  * kicad-library-3d
+  * ngspice
 
 ### Ubuntu 18.04 
-*TODO spin up a VM and make it work*
+For users of Ubuntu 18 or newer installation is as simple as 
+```
+# apt install kicad ngspice
+```
 
 ### MacOS / Windows
 On both of these platforms you will need to configure a C++ development environment from scratch. Both KiCAD 

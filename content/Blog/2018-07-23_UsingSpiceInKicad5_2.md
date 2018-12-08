@@ -1,4 +1,5 @@
 Title: Using SPICE in KiCAD 5 (Pt 2)
+Status: draft
 The latest version of KiCAD brings an interesting new feature; SPICE integration allows simulating your circuits straight from EESchema's schematic capture. SPICE is a powerful tool, which opens up many options for verifying your circuits. 
 
 In this article we will cover modelling more complex circuits with SPICE, using an idealised op-amp as an example.
