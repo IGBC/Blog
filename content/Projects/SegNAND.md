@@ -1,4 +1,5 @@
 Title: SegNAND
+Status: Draft
 Tags: SegNAND, Synth, Audio
 Category: Projects
 Date: 2016-12-11

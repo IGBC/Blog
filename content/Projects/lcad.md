@@ -1,4 +1,5 @@
 Title: L-CAD
+Status: Draft
 Tags: L-CAD, C, IDE, Logic
 Category: Projects
 Date: 2016-07-09
