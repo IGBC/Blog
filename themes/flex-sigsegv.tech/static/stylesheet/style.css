@@ -140,6 +140,10 @@ img.emoji{
     vertical-align:-0.2em
 }
 
+pre {
+    color: #FFF;
+}
+
 /* Icons */
 social a[href*='about.me'] {background-image: url('../images/icons/aboutme.png');}
 social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucket.png');}
