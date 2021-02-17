@@ -1,4 +1,5 @@
 Title: My Other Computer is a Racecar
+date: 2021-02-17
 status: draft
 
 # My Other Computer Is a Racecar
