@@ -1,5 +1,5 @@
-title = My Other Computer is a Racecar
-status = draft
+Title: My Other Computer is a Racecar
+status: draft
 
 # My Other Computer Is a Racecar
 _Experiments in building computers in very "not recomended" configurations
